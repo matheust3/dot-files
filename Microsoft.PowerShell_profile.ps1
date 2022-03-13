@@ -5,6 +5,7 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 # Auto Suggestions
 Import-Module PSReadLine
+Set-PSReadLineOption -Colors @{ "InlinePrediction"="#878787" }
 Set-PSReadLineOption -PredictionSource History
 
 Invoke-Expression (&starship init powershell)
