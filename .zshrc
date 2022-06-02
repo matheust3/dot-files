@@ -3,6 +3,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
+# select tab autosuggestion
+zstyle ':completion:*' menu select
 #auto suggestion
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # starshop config
