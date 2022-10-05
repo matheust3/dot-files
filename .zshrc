@@ -1,14 +1,10 @@
-#zsh history
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-setopt appendhistory
-# select tab autosuggestion
-zstyle ':completion:*' menu select
-#auto suggestion
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # starshop config
 export STARSHIP_DISTRO=" "
 export STARSHIP_CONFIG=/mnt/c/Users/mathe/.config/starship.toml
-
+#zsh 
+ZSH="/home/matheus/.oh-my-zsh"
+#Plugins
+plugins=(git zsh-autosuggestions)
+source $ZSH/oh-my-zsh.sh
+# start starship
 eval "$(starship init zsh)"
