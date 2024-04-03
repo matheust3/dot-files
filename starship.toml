@@ -89,7 +89,7 @@ disabled = false
 
 [hostname]
 ssh_only = false
-format = '[$ssh_symbol](bold blue)[$hostname](bold red)'
+format = '[$ssh_symbol](bold white)[$hostname](bold white)'
 trim_at = '.companyname.com'
 disabled = false
 ssh_symbol= '@'
